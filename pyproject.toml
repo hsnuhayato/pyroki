@@ -19,7 +19,6 @@ classifiers = [
 ]
 dependencies = [
     "tyro",
-    "jax>=0.4.0",
     "jaxlib",
     "jaxlie>=1.0.0",
     "jax_dataclasses>=1.0.0",
@@ -30,7 +29,8 @@ dependencies = [
     "yourdfpy",
     "trimesh",
     "viser",
-    "pyliblzfse",  # Need for viser.extras import in viser==0.2.23 
+    "pyliblzfse", # Need for viser.extras import in viser==0.2.23
+    "jax[cuda12]>=0.6.2",
 ]
 
 [project.optional-dependencies]
